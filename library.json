@@ -1,0 +1,16 @@
+[
+  {
+    "title": "teste",
+    "id": "12345",
+    "cover": "não"
+  },
+  {
+    "title": "ronaldo",
+    "id": "123456",
+    "cover": "ronaldo",
+    "tags": [
+      "ronaldo",
+      "que que ele disse"
+    ]
+  }
+]

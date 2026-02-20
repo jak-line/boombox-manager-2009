@@ -1,0 +1,179 @@
+/* ===== DEFAULT ===== */
+body.theme-default {
+  --bg: #cfd8dc;
+  --window: #eceff1;
+  --border-light: #ffffff;
+  --border-dark: #78909c;
+  --titlebar: #607d8b;
+  --button: #b0bec5;
+  --button-dark: #78909c;
+}
+
+/* ===== DARK ===== */
+body.theme-dark {
+  --bg: #1e1e1e;
+  --window: #2a2a2a;
+  --border-light: #444;
+  --border-dark: #000;
+  --titlebar: #111;
+  --button: #3a3a3a;
+  --button-dark: #000;
+}
+
+/* ===== VAPOR ===== */
+body.theme-vapor {
+  --bg: linear-gradient(135deg, #ff00cc, #3333ff);
+  --window: #522599a8;
+  --border-light: #dcc4f7;
+  --border-dark: #7700ff;
+  --titlebar: linear-gradient(to right, #b547ff, #4b00ad);
+  --button: #c7b3ff;
+  --button-dark: #4e00cc;
+
+  background-image: url("Assets/vaporwave.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== WINDOWS XP ===== */
+body.theme-xp {
+  --bg: #3a6ea5;
+  --window: #ece9d8;
+  --border-light: #ffffff;
+  --border-dark: #7f9db9;
+  --titlebar: linear-gradient(to right, #0a246a, #3a6ea5);
+  --button: #d4d0c8;
+  --button-dark: #7f9db9;
+
+  background-image: url("Assets/bliss.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== MATRIX ===== */
+body.theme-matrix {
+  --bg: transparent;
+  --window: #0a0a0af1;
+  --border-light: #003300;
+  --border-dark: #00ff00;
+  --titlebar: #001a00;
+  --button: #001a00;
+  --button-dark: #00ff00;
+
+  background: black;
+}
+
+body.theme-matrix {
+  color: #00ff00;
+}
+
+body.theme-matrix * {
+  color: inherit !important;
+  font-family: "Courier New", monospace;
+  text-shadow: 0 0 2px #00ff00;
+}
+
+body.theme-matrix .card,
+body.theme-matrix .playlist-row,
+body.theme-matrix .popup-window {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow:
+    inset 1px 1px #003300,
+    inset -1px -1px #00ff00;
+}
+
+body.theme-matrix input,
+body.theme-matrix select,
+body.theme-matrix textarea {
+  background: #000;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00;
+}
+
+/* ===== VIDEO BACKGROUND BASE ===== */
+#matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* mostrar só no tema matrix */
+body.theme-matrix #matrix-bg {
+  display: block;
+}
+
+/* ===== Y2K ===== */
+body.theme-y2k {
+  --bg: linear-gradient(135deg, #ffb6f9, #ffd6ff);
+  --window: #ffffff;
+  --border-light: #fff0fb;
+  --border-dark: #ff66cc;
+  --titlebar: linear-gradient(to right, #ff66cc, #ff99dd);
+  --button: #ffcce6;
+  --button-dark: #ff66cc;
+
+  background-image: url("Assets/pink-y2k.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== WINDOWS 98 ===== */
+body.theme-win98 {
+  --bg: #008080;
+  --window: #c0c0c0;
+  --border-light: #ffffff;
+  --border-dark: #808080;
+  --titlebar: #000080;
+  --button: #c0c0c0;
+  --button-dark: #808080;
+}
+
+/* ===== WINAMP ===== */
+body.theme-winamp {
+  --bg: #111;
+  --window: #2b2b2b;
+  --border-light: #444;
+  --border-dark: #000;
+  --titlebar: linear-gradient(to right, #ff9900, #ffcc00);
+  --button: #333;
+  --button-dark: #000;
+  color: #ffcc00;
+}
+
+/* ===== EMO ===== */
+body.theme-emo {
+  --bg: #000000;
+  --window: #11111186;
+  --border-light: #222;
+  --border-dark: #ff0055;
+  --titlebar: #111;
+  --button: #1a1a1a;
+  --button-dark: #ff0055;
+  color: #ff0055;
+
+  background-image: url("Assets/emo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== GAMEBOY ===== */
+body.theme-gameboy {
+  --bg: #9bbc0f;
+  --window: #8bac0f;
+  --border-light: #cadc9f;
+  --border-dark: #0f380f;
+  --titlebar: #306230;
+  --button: #8bac0f;
+  --button-dark: #0f380f;
+  color: #0f380f;
+}

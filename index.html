@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Boombox Manager 2009</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="themes.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Assets/icon.png">
+</head>
+
+<body>
+
+<video id="matrix-bg" autoplay muted loop playsinline>
+  <source src="Assets/matrix.mp4" type="video/mp4">
+</video>
+
+<div class="window">
+  <div class="titlebar">
+    <span>🎵 Boombox Manager 2009</span>
+    <div class="title-controls">
+      <button onclick="openAddWindow()">Add +</button>
+    </div>
+  </div>
+
+  <div class="toolbar">
+  <div class="toolbar-top">
+    <button id="favFilterBtn" class="button" onclick="toggleFavoritesView()">
+      ❤️ Favoritos
+    </button>
+
+    <input 
+      type="text" 
+      placeholder="Buscar música..."
+      oninput="handleSearch(this)"
+      class="search-input"
+    />
+    
+    <select onchange="changeSort(this.value)" class="sort-select">
+      <option value="recent">Mais recentes</option>
+      <option value="old">Mais antigos</option>
+      <option value="az">A → Z</option>
+      <option value="za">Z → A</option>
+    </select>
+
+    <select id="themeSelect" class="sort-select"></select>
+
+    <button class="button" onclick="exportBackup()">Exportar Backup</button>
+    <button class="button" onclick="triggerImport()">Importar Backup</button>
+
+    <button class="button hidden" id="adminBtn" onclick="openAdminPanel()">
+      ⚙ Admin
+    </button>
+  </div>
+
+  <div id="tagFilters"></div>
+
+  <div class="brand-area">
+  <img src="Assets/logo.png" id="mainLogo" class="toolbar-logo" onclick="handleLogoClick()">
+  <span class="brand-text">by JK's Studio</span>
+</div>
+</div>
+
+
+  <div class="toolbar">
+    <div class="library-switch">
+      <button class="button" id="btnPublic" onclick="openPublicPopup()">
+      Biblioteca Pública
+    </button>
+  </div>
+
+    <button class="button" onclick="openPlaylistPopup()">+ Playlist</button>
+    <input type="file" id="importInput" accept=".json" hidden onchange="importBackup(event)">
+
+    <div id="playlistList"></div>
+  </div>
+
+  <div class="content">
+    <div class="grid" id="musicGrid"></div>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div class="popup hidden" id="popup">
+  <div class="popup-window">
+
+    <div class="titlebar small">
+      <span>Adicionar Música</span>
+      <button onclick="closeAddWindow()">X</button>
+    </div>
+
+    <div class="popup-content">
+      <input id="musicName" placeholder="Nome da música">
+      <input id="musicID" placeholder="ID">
+      <input id="musicCover" placeholder="Link da capa">
+
+      <div>
+        <p>Selecionar tags:</p>
+        <div id="existingTags"></div>
+        <input id="newTag" placeholder="Nova tag">
+      </div>
+
+      <button onclick="saveMusic()">Salvar</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup hidden" id="playlistPopup">
+  <div class="popup-window">
+
+    <div class="titlebar small">
+      <span>Criar Playlist</span>
+      <button onclick="closePlaylistPopup()">X</button>
+    </div>
+
+    <div class="popup-content">
+      <input type="text" id="playlistName" placeholder="Nome da playlist">
+
+      <div id="playlistMusicList"></div>
+
+      <button onclick="savePlaylist()">Criar Playlist</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="popup hidden" id="creditsPopup">
+  <div class="popup-window">
+    <div class="titlebar small">
+      <span>Sobre o Boombox Manager</span>
+      <button onclick="closeCredits()">X</button>
+    </div>
+
+    <img src="Assets/logo2.png" class="credits-logo">
+
+    <div class="popup-content">
+      <p><strong>Boombox Manager 2009</strong></p>
+      <p>Rebuild Edition</p>
+
+      <br>
+
+      <p>Desenvolvido por</p>
+      <p><strong>JK's Studio</strong></p>
+
+      <br>
+
+      <p style="font-size:12px;opacity:0.6;">
+        Projeto independente<br>
+        Interface inspirada em softwares 2000s
+      </p>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="popup hidden" id="adminPopup">
+  <div class="popup-window">
+
+    <div class="titlebar small">
+      <span>Admin - Biblioteca Pública</span>
+      <button onclick="closeAdminPanel()">X</button>
+    </div>
+
+    <div class="popup-content">
+      <input id="adminTitle" placeholder="Nome da música">
+      <input id="adminID" placeholder="ID">
+      <input id="adminCover" placeholder="Link da capa">
+      <input id="adminTags" placeholder="Tags separadas por vírgula">
+
+      <button onclick="addPublicMusic()">Adicionar à Biblioteca Pública</button>
+
+      <hr>
+
+      <div id="adminPublicList"></div>
+
+      <hr>
+
+      <button onclick="exportPublicLibrary()">
+        📦 Exportar library.json
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="popup hidden" id="publicPopup">
+  <div class="popup-window public-big">
+
+    <div class="titlebar">
+      <span>Biblioteca Pública</span>
+      <button onclick="closePublicPopup()">X</button>
+    </div>
+
+    <div class="popup-content">
+      <div class="grid" id="publicGrid"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="themes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
