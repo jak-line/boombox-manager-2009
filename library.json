@@ -1,16 +1,83 @@
 [
   {
-    "title": "teste",
-    "id": "12345",
-    "cover": "não"
+    "title": "Airplane Mode",
+    "id": "73197748961359",
+    "cover": "https://cdn-images.dzcdn.net/images/cover/0128fc8d42fecd844043b40ed8c45dd6/0x1900-000000-80-0-0.jpg",
+    "tags": [
+      "CHILL-POP"
+    ]
   },
   {
-    "title": "ronaldo",
-    "id": "123456",
-    "cover": "ronaldo",
+    "title": "Sweet Little Bumblebee [Jumpstyle]",
+    "id": "128961712071619",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRykhs-AUVLy_EIdLVvsWRdcT6Z0NSWybGyXA&s",
     "tags": [
-      "ronaldo",
-      "que que ele disse"
+      "JUMPSTYLE"
+    ]
+  },
+  {
+    "title": "Has To Be",
+    "id": "137585563394909",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSorTYYEDWsVVfRJHkD8C99h6uZgPsRiaBEnA&s",
+    "tags": [
+      "TRAP"
+    ]
+  },
+  {
+    "title": "Montagem Sanor",
+    "id": "113425320169497",
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b0/20/a3/b020a3b4-8670-5f14-a01f-e8486121808c/artwork.jpg/316x316bb.webp",
+    "tags": [
+      "FUNK"
+    ]
+  },
+  {
+    "title": "Moonlight",
+    "id": "71327247982047",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273806c160566580d6335d1f16c",
+    "tags": [
+      "POP RAP"
+    ]
+  },
+  {
+    "title": "Freaks",
+    "id": "118545811050500",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-oM7ig-HOhVMvmNvUqYF83zT6QVDVzY9WA&s",
+    "tags": [
+      "SURF ROCK",
+      "INDIE"
+    ]
+  },
+  {
+    "title": "NUMBER",
+    "id": "82696338249251",
+    "cover": "https://i.scdn.co/image/ab67616d00001e02df40c5724b757ae5411c9722",
+    "tags": [
+      "HARDTEKK"
+    ]
+  },
+  {
+    "title": "Já Que Me Ensinou a Beber",
+    "id": "134415658996371",
+    "cover": "https://i.scdn.co/image/ab67616d0000b27335c25cc6535853d6697d5b15",
+    "tags": [
+      "FORRO"
+    ]
+  },
+  {
+    "title": "DARK AGE FUNK",
+    "id": "84295656118500",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273513f86185318695b22247c12",
+    "tags": [
+      "FUNK"
+    ]
+  },
+  {
+    "title": "FUNK DO MIRRORS",
+    "id": "73295033713326",
+    "cover": "https://i.scdn.co/image/ab67616d00001e021117bc9cd926c2bd3cfda259",
+    "tags": [
+      "FUNK"
     ]
   }
 ]
